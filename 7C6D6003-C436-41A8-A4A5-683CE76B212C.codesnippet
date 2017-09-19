@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>@log</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func WMLog&lt;Msg&gt;(_ messsage : Msg, file : String = #file, funcName : String = #function, lineNum : Int = #line) {
+    
+    #if DEBUG
+        
+        let fileName = (file as NSString).lastPathComponent
+        
+        print("文件名：\(fileName)\n方法名:\(funcName),行号:\(lineNum)\n打印内容：\(messsage)\n==================")
+        
+    #endif
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7C6D6003-C436-41A8-A4A5-683CE76B212C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>自定义log</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
